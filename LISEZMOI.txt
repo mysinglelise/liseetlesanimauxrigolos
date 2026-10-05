@@ -1,0 +1,25 @@
+LISE ET LES ANIMAUX RIGOLOS — fiche de présentation
+
+Mettre en ligne sur GitHub Pages
+1. Crée un dépôt (par ex. "animaux-rigolos") sur ton compte mysinglelise.
+2. Glisse-dépose TOUT le contenu de ce dossier (index.html + img/ + livret/ + docs/) dans le dépôt.
+3. Settings > Pages > Source : "Deploy from a branch", branche main, dossier / (root).
+4. Quelques minutes plus tard : https://mysinglelise.github.io/animaux-rigolos/
+
+Réglages faciles (en haut du <script>, à la fin de index.html)
+- LECTEUR MP3 : dépose tes MP3 dans le dossier audio/ avec ces noms exacts :
+  abeille.mp3, chiens.mp3, oiseau.mp3, croco.mp3, cochons.mp3, moustique.mp3,
+  puce.mp3, poisson.mp3, ta-maman.mp3
+  Les titres, l'ordre et les noms de fichiers se règlent dans la liste MORCEAUX (début du <script>).
+  Un morceau sans fichier est masqué ; s'il n'y a aucun fichier, un bouton SoundCloud s'affiche.
+  Conseil : MP3 en 192 kbps (environ 4 à 5 Mo par chanson).
+
+Pourquoi les vidéos YouTube affichent "erreur de configuration" en local
+- YouTube refuse de lancer ses lecteurs quand la page est ouverte comme un fichier sur l'ordinateur.
+  Une fois en ligne sur GitHub Pages, tout fonctionne (les playlists doivent être publiques ou "non répertoriées").
+
+Remplacer une photo par un GIF
+- Dépose le GIF dans img/ puis remplace le nom du fichier dans index.html
+  (ex. img/abeille.jpg → img/abeille.gif). Les cartes "l'oiseau", "les cochons", "la puce" et "fiesta"
+  n'ont pas encore d'image : remplace <div class="tab-img vide"><span>…</span></div>
+  par <div class="tab-img"><img src="img/oiseau.gif" alt="Lise en oiseau" loading="lazy"></div>
